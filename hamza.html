@@ -75,11 +75,14 @@ function calculate() {
     //console.log("firstResult: ", firstResult)
     
     let after = firsResult.toString().split(".")[1];
+    console.log("after: ", after)
 
     
-    let afterColon = parseInt(after.charAt(0))
-    if (afterColon > 0) {
-        rf ++
+    if ( after !== undefined) {
+        let afterColon = parseInt(after.charAt(0))
+        if (after > 0) {
+            rf ++
+        }
     }
     
     document.querySelector('#r').innerHTML += " x"+rf
